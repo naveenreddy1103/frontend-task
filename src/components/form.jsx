@@ -17,7 +17,8 @@ export const Register=()=>{
         console.log(data)
        await axios.post('https://backend-tasks-efn5.onrender.com/userform', data)
        .then((response)=>{
-        alert('user is added successfully');
+        alert(`${data.Name} is added successfully`);
+        console.log(data.Name)
         setData({ Name: "", Email: "", Message: "" });
 
        })
