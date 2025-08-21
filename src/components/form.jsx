@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useRef, useState } from "react"
-import './form.css'
+// import './form.css'
 
 export const Register=()=>{
     
@@ -37,7 +37,7 @@ export const Register=()=>{
 
     return(
        
-      <div className="container-fluid d-flex justify-content-center align-items-center main" style={{height:"100vh",width:"230vh"}} >
+      <div className="container-fluid d-flex justify-content-center align-items-center main" style={{height:"100vh"}} >
         
         <form className="mt-3 p-5 rounded rounded bg-white text-black" onSubmit={formsubmit}>
             <h3 className="bi bi-person-fill"> User Register</h3>
